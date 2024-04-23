@@ -2,7 +2,7 @@
 // string
 let str:string = 'Hello World';   // koi bhi kam double ya single cotation me hu us ko string khate he//
 console.log(str);
-// 2) string Propety       ...  lenght ko poroperty khatr he// 
+// 2) string Propety       ...  lenght ko poroperty khatehe// 
 
 console.log(str.length);       //lenght string ke ander ke lenght malum karta he space bhi include huta he//
 // string Method
@@ -27,7 +27,7 @@ console.log(str2Trim);                //string me left right se space remove kar
 //includes
 let strInclude = str.includes('E'.toLowerCase());
 console.log(strInclude);               //user upperCase me ya LowerCase me lekha par machine
-                                       // check LowerCase me karega  
+                                       // check LowerCase me karege
 //startsWith                                       
 let strStartWith = str.startsWith('o');
 console.log(strStartWith); // ya check karta he ke ju value user ne lekhi he wo "0" inder par hu tu " true "
