@@ -68,10 +68,25 @@ let arrOf = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let strOf = 'hello world';
 // for(let x of strOf){
 //     console.log(x);
-// };
-for (let x in arrOf) {
-    console.log(x);
+// // };
+// for(let x in arrOf){
+//     console.log(x);
+// }
+// for(let a in strOf){
+//     console.log(strOf[a]);
+// }
+let arrOf1 = ['ahmed', 'moiz', 'ashar',];
+// for (let myName1 of arrOf1 ){
+//     console.log(myName1);
+// }
+// for(let myFriend of arrOf1 ){
+//     console.log(arrOf1);
+// }
+let myFriend1 = ['ahmed', 'moiz', 'sammer', 'ashar'];
+let friendName = 'moiz';
+if (friendName.toLowerCase() === 'moiz') {
+    console.log('he is a ahmed B.F');
 }
-for (let a in strOf) {
-    console.log(strOf[a]);
+else {
+    console.log('he is not a ahmed friend');
 }

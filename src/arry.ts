@@ -164,81 +164,90 @@
 //   });
 
 
-let busLocation:string[] =['hyderabad','balochistan','punjab','lahore','islamabad','abbottabad'];
-let busTicket:string ="hyderabad";
+// let busLocation:string[] =['hyderabad','balochistan','punjab','lahore','islamabad','abbottabad'];
+// let busTicket:string ="hyderabad";
 
-if(busTicket.toLowerCase() === busLocation[0]){
-    console.log('karachi se hyderabad tikcet 1500');
-}else if(busTicket.toLowerCase() === busLocation[1]){
-    console.log('karachi se balochistan ticket  2000');
-}else if(busTicket.toLowerCase() === busLocation[2]){
-    console.log('karachi se punjab ticket 2500');
-}else if(busTicket.toLowerCase() === busLocation[3]){
-    console.log('karachi se lahore ticket 3000');
-}else if(busTicket.toLowerCase() === busLocation[4]){
-    console.log('karachi se islamabad ticket 4000');
-}else if(busTicket.toLowerCase() === busLocation[5]){
-    console.log('karachi se abbotabad ticket 5500');
-}else{
-    console.log('invalid place bus is not going this place');
-}
-let arrFruit:string[] =["mango",'banana','orange','kiwi'];
-arrFruit.forEach(function(e,i){
-    console.log(`${i+1}:${e} line number 187`);       ///har ak ak value ko print karne ka leya use huta he
-})
-//map
-// let mapArrFruit:string[]=arrFruit.map(function(e,i){
-//     return `${i+1}: ${e}`;  map method array ki halat ko change krta ha or new Array return krta ha
+// if(busTicket.toLowerCase() === busLocation[0]){
+//     console.log('karachi se hyderabad tikcet 1500');
+// }else if(busTicket.toLowerCase() === busLocation[1]){
+//     console.log('karachi se balochistan ticket  2000');
+// }else if(busTicket.toLowerCase() === busLocation[2]){
+//     console.log('karachi se punjab ticket 2500');
+// }else if(busTicket.toLowerCase() === busLocation[3]){
+//     console.log('karachi se lahore ticket 3000');
+// }else if(busTicket.toLowerCase() === busLocation[4]){
+//     console.log('karachi se islamabad ticket 4000');
+// }else if(busTicket.toLowerCase() === busLocation[5]){
+//     console.log('karachi se abbotabad ticket 5500');
+// }else{
+//     console.log('invalid place bus is not going this place');
+// }
+// let arrFruit:string[] =["mango",'banana','orange','kiwi'];
+// arrFruit.forEach(function(e,i){
+//     console.log(`${i+1}:${e} line number 187`);       ///har ak ak value ko print karne ka leya use huta he
+// })
+// //map
+// // let mapArrFruit:string[]=arrFruit.map(function(e,i){
+// //     return `${i+1}: ${e}`;  map method array ki halat ko change krta ha or new Array return krta ha
+// // });
+// // console.log(mapArrFruit);
+
+// //filter
+// // let filterArrNum:number[] =arrNumF.filter(function(e){   //filter method array ko filter krta ha or new Array return krta ha
+// //     return e>5;
+// // });
+// // console.log(filterArrNum);
+
+// let arrNumF:number[] = [1,2,3,4,5,6,7,8,9,10];  //filter array using map method
+// let arrFilt:(number|undefined)[] = arrNumF.map(function(e){
+//    if(e>5){
+//     return e;
+//    }
 // });
-// console.log(mapArrFruit);
+// // let arrSlice:(number| undefined)[]=arrFilt.slice(5,10);
+// // console.log(arrSlice);
 
-//filter
-// let filterArrNum:number[] =arrNumF.filter(function(e){   //filter method array ko filter krta ha or new Array return krta ha
-//     return e>5;
+// let ids:number=3;
+// let sports:string[]=["cricket","football","basketball","hockey","baseball"]
+// let sportsfilter:string[]=sports.filter(function(e,i){
+//     return i===ids;
 // });
-// console.log(filterArrNum);
-
-let arrNumF:number[] = [1,2,3,4,5,6,7,8,9,10];  //filter array using map method
-let arrFilt:(number|undefined)[] = arrNumF.map(function(e){
-   if(e>5){
-    return e;
-   }
-});
-// let arrSlice:(number| undefined)[]=arrFilt.slice(5,10);
-// console.log(arrSlice);
-
-let ids:number=3;
-let sports:string[]=["cricket","football","basketball","hockey","baseball"]
-let sportsfilter:string[]=sports.filter(function(e,i){
-    return i===ids;
-});
-if(sportsfilter.length === 0){
-    console.log(`this ${ids} id is not available`);
-}else{
-    console.log(sportsfilter);
-}
+// if(sportsfilter.length === 0){
+//     console.log(`this ${ids} id is not available`);
+// }else{
+//     console.log(sportsfilter);
+// }
 
 
-//reduce
+// //reduce
 let reduNum = [40,20,30,50,60,70,600,500,450,3400]; // curr value 
 let reduceNumAdd:number = reduNum.reduce(function(prev,curr){  
     return prev+curr;
 },0);      //0 prev ha    //array ki jo element arahe ha wo curr ha for Addition
 console.log(reduceNumAdd);
 
-let reduceNumMulti:number = reduNum.reduce(function(prev,curr){
-    return prev*curr;
-},1);      //1 prev ha    //array ki jo element arahe ha wo curr ha for Multiply
-console.log(reduceNumMulti);
-let reduceNumDivi:number = reduNum.reduce(function(prev,curr){
-    return curr/prev;
-},1);      //1 prev ha    //array ki jo element arahe ha wo curr ha for Division
-console.log(reduceNumDivi);
-let reduceNumSubt:number = reduNum.reduce(function(prev,curr){
-    if(prev<0){
-        return prev+curr;  // agr prev value 0 sa choti ho
-    }else{
-        return -prev+curr;  //  agr prev value 0 sa bari ho
-    }
-},reduNum[0]);      //array ki phlele prev ha    //baki jo element arahe ha wo curr ha for Subtract
-console.log(reduceNumSubt);
+// let reduceNumMulti:number = reduNum.reduce(function(prev,curr){
+//     return prev*curr;
+// },1);      //1 prev ha    //array ki jo element arahe ha wo curr ha for Multiply
+// console.log(reduceNumMulti);
+// let reduceNumDivi:number = reduNum.reduce(function(prev,curr){
+//     return curr/prev;
+// },1);      //1 prev ha    //array ki jo element arahe ha wo curr ha for Division
+// console.log(reduceNumDivi);
+// let reduceNumSubt:number = reduNum.reduce(function(prev,curr){
+//     if(prev<0){
+//         return prev+curr;  // agr prev value 0 sa choti ho
+//     }else{
+//         return -prev+curr;  //  agr prev value 0 sa bari ho
+//     }
+// },0);      //array ki phlele prev ha    //baki jo element arahe ha wo curr ha for Subtract
+// console.log(reduceNumSubt);
+
+
+
+
+let num2:number[]=[1,22,3,8,9,5,10,6,2,7,4,13];
+let numRedu:number=num2.reduce(function(prev,curr){
+    return prev+curr
+},0)
+console.log(numRedu);
