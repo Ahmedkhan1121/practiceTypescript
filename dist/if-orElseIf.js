@@ -42,7 +42,7 @@
 // else{
 //     console.log('there is no class');
 // }
-// var percentage:number =1000
+// var percentage:number =100
 // if(percentage >=80 &&percentage<=100){
 //     console.log('A+');
 // }else if(percentage>=70 && percentage<80){
@@ -85,7 +85,7 @@ else if (num1 % five === 0) {
 else {
     console.log(`${num1} are not available in both ${two} and ${three} table`);
 }
-let year = 2017;
+let year = 2020;
 if (year % 4 === 0) {
     console.log('leap Year');
 }

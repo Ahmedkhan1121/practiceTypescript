@@ -6,7 +6,7 @@
 
 // Arrow Function
 // single line of code
-// let funcArrow = ():string => "Hello Arrow Function"; 
+// let funcArrow = ():string => "Hello Arrow Function";  
 // console.log(funcArrow());
 
 // let copyArr = [1,2,3,4,5,6,7,8,9]; //global
@@ -43,3 +43,14 @@ function hello(){
 // Variable Hoisting
 console.log(hois);
 var hois =15;
+
+// arrow function rest parameter
+
+function factor(num:number):number{
+    if(num<1){
+        return 1
+    }else{
+        return num * factor(num -1)
+    }
+}
+console.log(factor(5));

@@ -1,4 +1,3 @@
-"use strict";
 // for(let i=1; i<=10; i++){
 //     console.log(i);
 // };
@@ -61,11 +60,11 @@
 //     }
 //     i++;
 // }while(i<=10)
-let arrOf = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var arrOf = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // for(let x of arrOf){
 //     console.log(x);
 // } 
-let strOf = 'hello world';
+var strOf = 'hello world';
 // for(let x of strOf){
 //     console.log(x);
 // // };
@@ -75,22 +74,22 @@ let strOf = 'hello world';
 // for(let a in strOf){
 //     console.log(strOf[a]);
 // }
-let arrOf1 = ['ahmed', 'moiz', 'ashar',];
+var arrOf1 = ['ahmed', 'moiz', 'ashar',];
 // for (let myName1 of arrOf1 ){
 //     console.log(myName1);
 // }
 // for(let myFriend of arrOf1 ){
 //     console.log(arrOf1);
 // }
-let myFriend1 = ['ahmed', 'moiz', 'sammer', 'ashar'];
-let friendName = 'moiz';
+var myFriend1 = ['ahmed', 'moiz', 'sammer', 'ashar'];
+var friendName = 'moiz';
 if (friendName.toLowerCase() === 'moiz') {
     console.log('he is a ahmed B.F');
 }
 else {
     console.log('he is not a ahmed friend');
 }
-let rollNo = 100;
-for (let i = 1; i <= rollNo; i++) {
-    console.log(`roll no ${i}`);
+var rollNo = 100;
+for (var i = 1; i <= rollNo; i++) {
+    console.log("roll no ".concat(i));
 }

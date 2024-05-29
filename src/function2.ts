@@ -13,10 +13,12 @@ hello1()
 //     console.log(a+b);
 // };
 // funcWithParam(5,"5"); //argument
+
 // function notReturn():void{
 //     console.log("hello");
 // };
 // console.log(notReturn());
+
 //  //return in function
 //  console.log("return in function");
 //  function returnValue(a:number,b:number):number{

@@ -176,7 +176,7 @@
 // // console.log(filterArrNum);
 // let arrNumF:number[] = [1,2,3,4,5,6,7,8,9,10];  //filter array using map method
 // let arrFilt:(number|undefined)[] = arrNumF.map(function(e){
-//    if(e>5){
+//    if(e>5 ){
 //     return e;
 //    }
 // });

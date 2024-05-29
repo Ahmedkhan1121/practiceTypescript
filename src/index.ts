@@ -43,3 +43,8 @@ console.log(strIndexOf);                 //string ke ander start me wo value hug
 let strLastIndexOf:number = str.lastIndexOf('o');
 console.log(strLastIndexOf);               //string ke ander last me wo value huge  ju user ne lekhi he tu us ke lenght bata dega
 
+
+let indexOf:string='shahzaib';
+let strIndexOf2:number =indexOf.indexOf(9);
+console.log(strIndexOf2);
+

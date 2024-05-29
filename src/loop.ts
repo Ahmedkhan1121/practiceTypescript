@@ -102,3 +102,8 @@ if(friendName.toLowerCase()==='moiz'){
 else{
     console.log('he is not a ahmed friend');
 }
+
+let rollNo:number=100;
+for(let i=1; i<=rollNo; i++){
+    console.log(`roll no ${i}`);
+}
